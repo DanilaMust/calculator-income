@@ -1,0 +1,65 @@
+.wrapper {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+.wrapper input {
+    padding: 10px 25px ;
+}
+.colums__available {
+    border: none;
+}
+.columns__container {
+
+}
+.columns-flex {
+    display: flex;
+}
+.columns-grid {
+    display: grid;
+    margin-right: 50px;
+}
+.columns__income {
+}
+.colums__income-values {
+}
+.input {
+}
+.columns__expenses {
+}
+.colums__expenses-values {
+}
+.columns__available input {
+    padding: 0;
+    border: none;
+    outline: none;
+} 
+    
+.colums__available-month {
+}
+.available-month {
+}
+.colums__available-day {
+}
+.available-day {
+}
+.colums__available-year {
+}
+.available-year {
+}
+.piggy-bank {
+}
+.cashflow input{
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.cashflow__save {
+    margin-right: 50px;
+}
+.save {
+}
+.cashflow__spend {
+}
+.spend {
+}

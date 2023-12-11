@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Калькулятор личных доходов</h1>
+        <div class="columns__container columns-flex">
+            <div class="columns__income">
+                <h2>Доходы</h2>
+                <div class="colums__income-values columns-grid">
+                    <input 
+                        type="number"
+                        placeholder="Зарплата"
+                        id="income-salary"
+                        class="input"
+                    >
+                    <input 
+                        type="number"
+                        placeholder="Фриланс"
+                        id="income-freelance"
+                        class="input"
+                    >
+                    <input 
+                        type="number"
+                        placeholder="Стипендия"
+                        id="income-stipend"
+                        class="input"
+                    >
+                    <input 
+                        type="number"
+                        placeholder="Подаренные деньги"
+                        id="income-donation"
+                        class="input"
+                    >
+                </div>
+            </div>
+            <div class="columns__expenses">
+                <h2>Расходы</h2>
+                <div class="colums__expenses-values columns-grid">
+                    <input 
+                        type="number"
+                        placeholder="Еда"
+                        id="expenses-food"
+                        class="input"
+                    >
+                    <input 
+                        type="number"
+                        placeholder="Одежда"
+                        id="expense-clothes"
+                        class="input"
+                    >
+                    <input 
+                        type="number"
+                        placeholder="Проезд"
+                        id="expenses-transport"
+                        class="input"
+                    >
+                    <input 
+                        type="number"
+                        placeholder="Развлечения"
+                        id="expenses-entertainments"
+                        class="input"
+                    >
+                </div>
+            </div>
+            <div class="columns__available columns-grid">
+                <div class="colums__available">
+                    <h2>Доступно в месяц</h2>
+                    <input 
+                        type="number"
+                        id="available-month"
+                        class="available"
+                        value="0"
+                        readonly
+                    >
+                </div>
+                <div class="colums__available">
+                    <h2>Доступно в день</h2>
+                    <input 
+                        type="number"
+                        id="available-day"
+                        class="available"
+                        value="0"
+                        readonly
+                    >
+                </div>
+                <div class="colums__available">
+                    <h2>Накопим за год</h2>
+                    <input 
+                        type="number"
+                        id="available-year"
+                        class="available"
+                        value="0"
+                        readonly
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="bank">
+            <h2>Копилка</h2>
+            <div class="bank__wrapper">
+                <input type="range" min="0" max="100" value="0"  id="bank-range">
+            </div>
+            <div><span id="bank-percents">0</span>%</div>
+        </div>
+        <div class="cashflow columns-flex">
+            <div class="cashflow__save colums__available">
+                <h2>Копим</h2>
+                <input 
+                    type="number"
+                    id="cashflow-save"
+                    value="0"
+                    readonly
+                >
+            </div>
+            <div class="cashflow__spend colums__available">
+                <h2>Можно потратить</h2>
+                <input 
+                    type="number"
+                    id="cashflow-spend"
+                    value="0"
+                    readonly
+                >
+            </div>
+        </div>
+    </div>   
+    <script src="main.js"></script>
+</body>
+</html>
